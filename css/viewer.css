@@ -40,6 +40,12 @@ html, body {
   justify-content: center;
 }
 
+.viewer {
+    width: 100vw; 
+    height: 100vh; 
+    overflow: hidden;
+}
+
 #viewer-container {
   position: fixed;
   top: 0;
