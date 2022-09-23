@@ -34,9 +34,6 @@ async function loadIfc(url) {
       const areaProperties = await viewer.IFC.getProperties(0, areaID, true);
       const areaQuantity = Math.round(areaProperties.AreaValue.value);
       
-      console.log(areaID);
-      console.log(areaProperties);
-
       const table = document.getElementById('spaces-table');
       const body = table.querySelector('tbody');
       addPropertyEntry(body, spaceName, areaQuantity);
